@@ -16,30 +16,37 @@
     }
 
     header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #fff;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;          
-    z-index: 1000;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+      box-sizing: border-box;
     }
 
     header h1 {
-    font-weight: 600;
-    font-size: 1.2rem;
-    margin: 0;
+      font-weight: 600;
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    nav {
+      flex: 1; 
+      display: flex;
+      justify-content: flex-end;
     }
 
     nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
     }
 
     nav a {
@@ -81,9 +88,15 @@
       font-weight: 600;
       text-align: center;
     }
+    section h3 {
+      text-align: center;
+      max-width: 2000px;
+      margin: auto;
+      color: #444;
+    }
     section p {
       text-align: center;
-      max-width: 700px;
+      max-width: 1000px;
       margin: auto;
       color: #444;
     }
@@ -117,10 +130,20 @@
 
   <section id="profil">
     <h2>Profil</h2>
-    <p>Présentation de mon parcours.</p>
+    <p>je suis étudiant a Gaston Berger en BTS SIO (Services Informatiques aux Organisations)</p>
+
+    <h2>Qu'est-ce que le BTS SIO ?</h2>
+    <p>Le BTS SIO (Services Informatiques aux Organisations) est un diplôme de niveau Bac+2 qui forme des techniciens capables de développer, déployer et maintenir des solutions informatiques au sein des entreprises et des administrations.</p>
+
+    <h2>BTS SIO posséde deux option</h2>
+    <h3>option SISR :</h3>
+    <p>SISR (Solutions d'Infrastructure, Systèmes et Réseaux) est une formation de deux ans qui vous prépare à devenir technicien supérieur spécialisé dans la gestion et la sécurisation des infrastructures informatiques.</p>
+    <h3>option SLAM :</h3>
+    <p> SLAM (Solutions Logicielles et Applications Métiers) vous prépare à la mise en place de solutions informatiques au sein des entreprises, en vue de gérer efficacement un parc informatique complet.</p>
+
   </section>
 
-  <section id="certification">
+  <section id="certification"> 
     <h2>Certification</h2>
     <p>Liste de mes certifications professionnelles et techniques.</p>
   </section>
@@ -157,4 +180,3 @@
   </script>
 </body>
 </html>
-

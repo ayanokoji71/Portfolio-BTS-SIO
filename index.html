@@ -77,6 +77,19 @@
       margin: 0.5rem 0;
       color: #555;
     }
+
+    .options {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 2rem;
+    }
+
+    .options section {
+    flex: 1;
+    text-align: left;
+    }
+
     section {
       padding: 6rem 2rem;
       max-width: 900px;
@@ -96,6 +109,12 @@
     }
     section p {
       text-align: center;
+      max-width: 1000px;
+      margin: auto;
+      color: #444;
+    }
+    section pleft {
+      text-align: left;
       max-width: 1000px;
       margin: auto;
       color: #444;
@@ -134,13 +153,19 @@
 
     <h2>Qu'est-ce que le BTS SIO ?</h2>
     <p>Le BTS SIO (Services Informatiques aux Organisations) est un diplôme de niveau Bac+2 qui forme des techniciens capables de développer, déployer et maintenir des solutions informatiques au sein des entreprises et des administrations.</p>
-
+    
     <h2>BTS SIO posséde deux option</h2>
-    <h3>option SISR :</h3>
-    <p>SISR (Solutions d'Infrastructure, Systèmes et Réseaux) est une formation de deux ans qui vous prépare à devenir technicien supérieur spécialisé dans la gestion et la sécurisation des infrastructures informatiques.</p>
-    <h3>option SLAM :</h3>
-    <p> SLAM (Solutions Logicielles et Applications Métiers) vous prépare à la mise en place de solutions informatiques au sein des entreprises, en vue de gérer efficacement un parc informatique complet.</p>
+    <div class="options">
+        <section class="SISR">
+            <h3>Option SISR :</h3>
+            <pleft>SISR (Solutions d'Infrastructure, Systèmes et Réseaux) est une formation de deux ans qui vous prépare à devenir technicien supérieur spécialisé dans la gestion et la sécurisation des infrastructures informatiques.</pleft>
+        </section>
 
+        <section class="SLAM">
+            <h3>Option SLAM :</h3>
+            <pleft>SLAM (Solutions Logicielles et Applications Métiers) vous prépare à la mise en place de solutions informatiques au sein des entreprises, en vue de gérer efficacement un parc informatique complet.</pleft>
+        </section>
+    </div>
   </section>
 
   <section id="certification"> 

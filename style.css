@@ -198,13 +198,13 @@ table.synthese-table th {
 }
 
 /* Boutons Croix pour preuves */
-.cross-btn {
+.check-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: 28px;
   height: 28px;
-  background-color: var(--danger);
+  background-color: #22c55e; /* Vert */
   color: white;
   border-radius: 50%;
   cursor: pointer;
@@ -212,8 +212,8 @@ table.synthese-table th {
   transition: transform 0.2s, background-color 0.2s;
 }
 
-.cross-btn:hover {
-  background-color: var(--danger-hover);
+.check-btn:hover {
+  background-color: #16a34a; /* Vert plus foncé au survol */
   transform: scale(1.15);
 }
 
